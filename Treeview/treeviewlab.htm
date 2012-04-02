@@ -42,6 +42,12 @@
           background-repeat: repeat-y;
           background-position: 0px 0px;
      }
+     .treeview .topnodes
+     {
+          background-image: url(cs.treeview/images/treeview-default-line-short.gif);
+          background-repeat: repeat-y;
+          background-position: 0px 0px;
+     }
      .treeview .nodeheader
      {
           min-height:21px;
@@ -168,16 +174,16 @@
      <br />
      <br />
      <div class="treeview">
-          <div class="node">
+          <div class="node topnodes">
                <div class="nodeheader firstnode">
                     <span class="icon minusicon"></span><span class="nodetitle">Bears!</span>
                </div>
-               <div class="nodes">
-                    <div class="node">
+               <div>
+                    <div class="node nodes">
                          <div class="nodeheader normalnode">
                               <span class="icon minusicon"></span ><span class="nodetitle">Panda</span>
                          </div>
-                         <div class="nodes">
+                         <div>
                               <div class="node">
                                    <div class="nodeheader normalnode">
                                         <span class="icon normalbranch"></span><span class="nodetitle">Sleepy</span>
@@ -207,11 +213,11 @@
                     </div>
                </div>
           </div>
-          <div class="node">
+          <div class="node nodes">
                <div class="nodeheader normalnode">
                     <span class="icon minusicon"></span><span class="nodetitle">Family</span>
                </div>
-               <div class="nodes">
+               <div>
                     <div class="node">
                          <div class="nodeheader normalnode">
                               <span class="icon plusicon"></span><span class="nodetitle">Dao Dao</span>
@@ -233,7 +239,7 @@
                <div class="nodeheader lastnode">
                     <span class="icon minusicon"></span><span class="nodetitle">Items</span>
                </div>
-               <div class="">
+               <div>
                     <div class="node">
                          <div class="nodeheader normalnode">
                               <span class="icon normalbranch"></span><span class="nodetitle">Bear Bank</span>
@@ -245,7 +251,7 @@
                          </div>
                     </div>
                     <div class="node">
-                         <div class="nodeheader normalnode">
+                         <div class="nodeheader lastnode">
                               <span class="icon lastbranch"></span><span class="nodetitle">Dragon Costume</span>
                          </div>
                     </div>
