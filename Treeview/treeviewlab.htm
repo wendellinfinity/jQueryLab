@@ -10,7 +10,29 @@
 
 <link href="/cs.treeview/cs.treeview.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-    
+    .customtitle
+    {
+        color: #003366;
+    }
+    .customtreetheme
+    {
+        background-color: #CCD6E0;
+    }
+    .customhover 
+    {
+        background-color: #FF9933;
+    }
+    .customselected
+    {
+        background-color: #CC0000;
+        color:#FFFFFF;
+        font-weight:bold;
+    }
+    .yellowfont 
+    {
+        color:#FFFF00;
+        background-color:#6600CC;
+    }
 </style>
 
 <script>
@@ -18,7 +40,16 @@
     alert(typeof Sys == "undefined");*/
 
     $(document).ready(function () {
-        $("#treeviewproto").simpletree();
+        $("#treeviewproto").cstree({
+            nodeclickdelegate: function (node) {
+                // demo that it can access the node, can access attributes too
+                //alert(node.html());
+            },
+            customtreetheme: "customtreetheme",
+            nodetextstyle: "customtitle",
+            nodehoverstyle: "customhover",
+            nodeselectedstyle: "customselected"
+        });
     });
 </script>
 
@@ -30,7 +61,7 @@
                     <li><span>Panda</span>
                         <ul class="expanded">
                             <li><span>Sleepy</span></li>
-                            <li><span>Sunny Bay</span></li>
+                            <li><span><span class="yellowfont">Sunny</span> Bay</span></li>
                             <li><span>Xiao Long Bao</span></li>
                         </ul>
                     </li>

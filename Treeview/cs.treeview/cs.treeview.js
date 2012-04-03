@@ -22,6 +22,9 @@
             function setup(tree) {
                 // start with roo
                 tree.addClass("treeview");
+                if(settings.customtreetheme != null) {
+                    tree.addClass(settings.customtreetheme);
+                }
                 tree.children("ul").each(function() {
                     var ul;
                     ul=$(this);
@@ -43,6 +46,9 @@
                     // place determinant for icon here
                     // create the title
                     title=$("<span />").addClass("nodetitle").html($(this).children("span").html());
+                    if(settings.nodetextstyle!=null) {
+                        title.addClass(settings.nodetextstyle);
+                    }
                     // adjust based on node position
                     if(nodecount==0 && !(nodecount==nodetotal)) {
                         header.addClass("topnode");
@@ -89,14 +95,22 @@
 
             // apply behavior of all interactive elements
             function applyBehavior(tree) {
+                var hoverstyle,selectedstyle;
+                hoverstyle="hover"
+                if(settings.nodehoverstyle != null) hoverstyle=settings.nodehoverstyle;
+                selectedstyle="selected"
+                if(settings.nodeselectedstyle != null) selectedstyle=settings.nodeselectedstyle;
                 tree.find(".nodetitle")
                    .hover(
-                        function () { $(this).addClass("hover"); },
-                        function () { $(this).removeClass("hover"); })
+                        function () { $(this).addClass(hoverstyle); },
+                        function () { $(this).removeClass(hoverstyle); })
                    .click(
                         function () {
-                            $(this).addClass("selected");
-                            $(".treeview .nodetitle").not(this).removeClass("selected");
+                            $(this).addClass(selectedstyle);
+                            $(".treeview .nodetitle").not(this).removeClass(selectedstyle);
+                            if(settings.nodeclickdelegate!=null) {
+                                settings.nodeclickdelegate($(this));
+                            }
                         });
 
 
