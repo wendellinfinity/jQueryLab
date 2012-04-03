@@ -1,0 +1,101 @@
+﻿   .treeview
+    {
+        background-color: #85C285;
+        width: 200px;
+        font-family: MS Sans Serif;
+        font-size: 14px;
+    }
+    .treeview .children
+    {
+    }
+    .treeview .expanded
+    {
+    }
+    .treeview .collapsed
+    {
+        display: none;
+    }
+    .treeview .node
+    {
+        margin-left: 16px;
+    }
+    .normalnode
+    {
+        background-image: url(images/treeview-default-line-short-mid.gif);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+    .firstnode
+    {
+        background-image: url(images/treeview-default-line-short.gif);
+        background-repeat: no-repeat;
+        background-position: 0px 12px;
+    }
+    .lastnode
+    {
+        background-image: url(images/treeview-default-line-short.gif);
+        background-repeat: no-repeat;
+        background-position: 0px -64px;
+    }
+    .treeview .nodes
+    {
+        background-image: url(images/treeview-default-line-short.gif);
+        background-repeat: repeat-y;
+        background-position: 0px 0px;
+    }
+    .treeview .topnode
+    {
+        background-image: url(images/treeview-default-line-short.gif);
+        background-repeat: repeat-y;
+        background-position: 0px 0px;
+    }
+    .treeview .nodeheader
+    {
+        min-height: 21px;
+        padding: 0px;
+    }
+    .treeview .nodetitle
+    {
+        width: 200px;
+        cursor: pointer;
+        min-height: 21px;
+        vertical-align: middle;
+        margin-left: 2px;
+    }
+    .hover
+    {
+        background-color: #B6DAB6;
+    }
+    .selected
+    {
+        background-color: #FFFF66;
+    }
+    .treeview .node .icon
+    {
+        width: 16px;
+        min-height: 21px;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    .plusicon
+    {
+        background-image: url(images/treeview-default.gif);
+        background-position: -48px -45px;
+        cursor: pointer;
+    }
+    .minusicon
+    {
+        background-image: url(images/treeview-default.gif);
+        background-position: -16px -89px;
+        cursor: pointer;
+    }
+    .normalbranch
+    {
+        background-image: url(images/treeview-default.gif);
+        background-position: -32px -200px;
+    }
+    .lastbranch
+    {
+        background-image: url(images/treeview-default.gif);
+        background-position: -0px -244px;
+    }
