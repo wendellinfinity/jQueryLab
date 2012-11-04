@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>slide</title>
+		<meta name="author" content="rawrwarbear" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" href="Content/site.css" type="text/css" />
+		<link rel="stylesheet" href="Content/simpleslider/simpleslider.css" type="text/css" />		
+		<script type="text/javascript" src="Scripts/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="Scripts/simpleslider.js"></script>
+	</head>
+	<script>
+	var simpleslide;
+	$(document).ready(function(){
+		// initialize the simple slide control
+		simpleslide = $("#targetslides").simpleslider(
+			{
+				slidemasterid:"targetslides",
+				width:600,
+				height:380,
+				speed:"slow"	
+			}
+		);
+	});
+	</script>
+	<body>
+		<div id="targetslides">
+			<img src="images/panda01.jpg" alt="" />
+			<img src="images/panda02.jpg" alt="" />
+			<img src="images/panda03.jpg" alt="" />
+			<img src="images/panda04.jpg" alt="" />
+			<img src="images/panda05.jpg" alt="" />			
+		</div>
+		
+	</body>
+</html>

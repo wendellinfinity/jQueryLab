@@ -1,0 +1,40 @@
+.slidemaster {
+	overflow:hidden;
+	padding:0px;	
+}
+
+.slidemaster .slide {
+	float:left;
+	position:relative;
+	top:0px;
+	margin:0px;
+	overflow:hidden;
+}
+
+.slidemaster .slidecontainer {
+	padding:0px;
+}
+
+.slidemaster .sliderbutton {
+	width:20px;
+	height:20px;
+	cursor:pointer;
+}
+
+.slidemaster .sliderleft {
+	background-image: url("images/sliderarrows.png");
+	background-position: 0px 0px;
+	float:left;
+}
+
+.slidemaster .sliderright {
+	background-image: url("images/sliderarrows.png");
+	background-position: -21px 0px;
+	float:right;
+}
+
+.slidemaster .slidernavigation {
+	position:relative;
+	height:22px;
+	left:0px;
+}
