@@ -16,25 +16,26 @@
 }
 
 .slidemaster .sliderbutton {
-	width:20px;
-	height:20px;
+	width:41px;
+	height:39px;
 	cursor:pointer;
 }
 
 .slidemaster .sliderleft {
-	background-image: url("images/sliderarrows.png");
+	background-image: url("images/left_arrow.png");
 	background-position: 0px 0px;
 	float:left;
 }
 
 .slidemaster .sliderright {
-	background-image: url("images/sliderarrows.png");
-	background-position: -21px 0px;
+	background-image: url("images/right_arrow.png");
+	/*background-position: -21px 0px;*/
+	background-position: 0px 0px;
 	float:right;
 }
 
 .slidemaster .slidernavigation {
 	position:relative;
-	height:22px;
+	height:39px;
 	left:0px;
 }
